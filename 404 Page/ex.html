@@ -1,0 +1,807 @@
+{/*<nav className="md:flex items-baseline justify-around  py-2 md:px-10 px-5">
+    <div className="font-bold text-3xl">
+        <a href="/">mr.ex</a>
+    </div>
+
+
+
+
+    <div className=" md:flex md:items-center md:justify-between ">
+        <p className=" mr-8 font-bold">
+            <a href="/">All service</a>
+        </p>
+        <p className="bg-white   font-bold mr-8">
+            Login/Sign Up
+        </p>
+
+
+        <button className="bg-green-600 text-white border  px-5 py-1 rounded font-bold">
+            join as a pro
+        </button>
+    </div>
+</nav>}
+{/*container text start */}
+<div className=' flex flex-col justify-center items-center  p-40'>
+
+
+    <h2 className='text-4xl font-bold mb-6'>Book Professional Service for</h2>
+    <h1 className='text-6xl font-bold mb-6'>Home and Office</h1>
+    <p>
+        Book professional cleaning, appliance repair, home shifting <br />
+        handyman or any kind of maintenance service in Dhaka with
+    </p>
+    <p className='font-medium  mb-6'>MR.EX</p>
+    {/*search bar start */}
+    <div class=" text-black  bg-white mb-6">
+        <div class="border rounded-full  flex">
+            <input type="text" class="px-4 py-2 rounded-full" placeholder="Search..." />
+            <button class="bg-green-500 rounded-r-full flex items-center justify-center px-4 border-l">
+                <svg class="h-4 w-4 text-grey-dark" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
+                </svg>
+            </button>
+        </div>
+
+    </div>
+    {/*search bar start */}
+    <nav>
+        <ul className='flex gap-5'>
+            <li><a href="#.html">plambing</a></li>
+            <li><a href="#.htm">Ac cleaner</a></li>
+            <li><a href="#.htm">handyman</a></li>
+            <li><a href="#.htm">repair</a></li>
+            <li><a href="#.htm">electricity</a></li>
+        </ul>
+    </nav>
+
+
+
+</div>
+{/*container text end */}
+
+
+
+{/* 2nd card start */}
+<div className="container mx-auto">
+    <div className='2nd-container'>
+        <div className='text-center mt-6 mb-20'>
+            <h1 className='text-2xl '>-Why Choose Us</h1>
+        </div>
+        <div className="flex flex-wrap  justify-between gap-5 p-10">
+
+            {Card.map((x) =>
+            <div class="rounded-lg  bg-white max-w-sm" key={x.id}>
+                <a href="#!">
+                    <img class="h-20 w-20 mx-auto " src="https://mdbootstrap.com/img/new/standard/nature/184.jpg"
+                        alt="" />
+                </a>
+                <div class="p-6">
+                    <h5 class="text-gray-900 text-center text-xl font-bold mb-2">{x.CardTitle}</h5>
+                    <p class="text-gray-700 text-center text-base mb-4">
+                        {x.CardBody}
+                    </p>
+
+                </div>
+
+            </div>
+
+            )}
+
+
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <div className="flex  justify-evenly">
+        <img src={Bgimg} className=' w-auto' alt="" />
+        <div className='flex flex-col'>
+
+            <div className="flex gap-5">
+                <img src={Oneimg} className="h-11" alt="" />
+                <div className='  mt-4 max-w-sm'>
+                    <h1 className='font-medium'>Select The Service </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, soluta!Lorem ipsum dolor
+                        sit amet, consectetur adipisicing elit. Repudiandae, soluta</p>
+                </div>
+            </div>
+            <div className="flex gap-5">
+                <img src={Oneimg} className="h-11" alt="" />
+                <div className='  mt-4 max-w-sm'>
+                    <h1>Select The Service </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, soluta!Lorem ipsum dolor
+                        sit amet, consectetur adipisicing elit. Repudiandae, soluta</p>
+                </div>
+            </div>
+            <div className="flex gap-5">
+                <img src={Oneimg} className="h-11" alt="" />
+                <div className='  mt-4 max-w-sm'>
+                    <h1>Select The Service </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, soluta!Lorem ipsum dolor
+                        sit amet, consectetur adipisicing elit. Repudiandae, soluta</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div className='text-center mt-14 mb-20'>
+        <h1 className='text-2xl '>-Feature Taskers</h1>
+    </div>
+    <div className="flex justify-evenly mt-20">
+
+        <div class="rounded-lg  bg-white max-w-sm ">
+            <div className='h-[100px] w-[100px] rounded-full bg-slate-300 mx-auto p-2'>
+                <a href="#!">
+                    <img class="h-20 w-20 rounded-full mx-auto "
+                        src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" alt="" />
+                </a>
+            </div>
+
+            <div class="p-6">
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Md.Tofayel islam</h5>
+
+                <p class="text-gray-700 text-base mb-4">
+                    174 completed tasks
+                </p>
+
+            </div>
+        </div>
+        <div class="rounded-lg  bg-white max-w-sm ">
+            <div className='h-[100px] w-[100px] rounded-full bg-slate-300 mx-auto p-2'>
+                <a href="#!">
+                    <img class="h-20 w-20 rounded-full mx-auto "
+                        src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" alt="" />
+                </a>
+            </div>
+
+            <div class="p-6">
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Md.Tofayel islam</h5>
+
+                <p class="text-gray-700 text-base mb-4">
+                    174 completed tasks
+                </p>
+
+            </div>
+        </div>
+        <div class="rounded-lg  bg-white max-w-sm ">
+            <div className='h-[100px] w-[100px] rounded-full bg-slate-300 mx-auto p-2'>
+                <a href="#!">
+                    <img class="h-20 w-20 rounded-full mx-auto "
+                        src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" alt="" />
+                </a>
+            </div>
+
+            <div class="p-6">
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Md.Tofayel islam</h5>
+
+                <p class="text-gray-700 text-base mb-4">
+                    174 completed tasks
+                </p>
+
+            </div>
+        </div>
+        <div class="rounded-lg  bg-white max-w-sm ">
+            <div className='h-[100px] w-[100px] rounded-full bg-slate-300 mx-auto p-2'>
+                <a href="#!">
+                    <img class="h-20 w-20 rounded-full mx-auto "
+                        src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" alt="" />
+                </a>
+            </div>
+
+            <div class="p-6">
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Md.Tofayel islam</h5>
+
+                <p class="text-gray-700 text-base mb-4">
+                    174 completed tasks
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+    <div className='text-start mt-14 mb-20'>
+        <h1 className='text-2xl '>-Real Happy Customers, <br /> Real Stories</h1>
+    </div>
+    <div className="flex  justify-evenly">
+        <div>
+            <h4 className='max-w-lg'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus
+                perferendis ut accusamus modi obcaecati saepe dolore mollitia nesciunt, numquam aspernatur quam neque
+                voluptatem quidem culpa. Voluptatem, maxime facilis. Quod, veritatis. Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Quasi ullam labore sapiente tempore dolorem perferendis officiis nulla
+                repellendus eum deserunt!</h4>
+        </div>
+        <img src={Bgimg} className=' w-auto' alt="" />
+
+    </div>
+    <div className="flex justify-evenly mt-20">
+        <img src={Phone} className='h-[600px]' alt="" />
+        <div className='mt-24'>
+            <h1 className='text-2xl font-medium mb-6'>Easy Way of Booking Services</h1>
+            <h1 className='text-5xl font-bold max-w-sm mb-6'>
+                Download Our Mobile App Now!!
+            </h1>
+            <p className='border inline  rounded p-2 '>Download Now</p>
+            <p className='border inline  rounded p-2 ml-4 '>Download Now</p>
+        </div>
+
+
+
+    </div>
+    <div className=" mt-14">
+        <h1 className='text-center text-3xl font-medium mb-6'>Get Support Any Time,From Any Where. We are here for you
+            24/7</h1>
+        <div className='text-center'>
+            <p className='  border inline  rounded p-2 px-6 '>Request for Service</p>
+            <p className=' border inline  rounded p-2 ml-4 px-6'>16222</p>
+        </div>
+    </div>
+
+</div>
+{/* 2nd card end */}
+
+
+{/*footer start */}
+<div className="mt-20 bg-slate-900 ">
+    <div className="flex  justify-evenly bg-slate-800">
+        <div class="block p-6    max-w-sm">
+            <h5 class="text-white text-xl text-center leading-tight font-medium mb-4">Company logo</h5>
+            <div className="flex justify-between">
+                <img src={Fb} alt="" />
+                <img src={Instragram} alt="" />
+                <img src={Linkend} alt="" />
+            </div>
+
+
+        </div>
+        <div class="block p-6    max-w-sm">
+            <h5 class="text-white text-xl text-center leading-tight font-medium mb-4">Payment methods</h5>
+            <div className="flex justify-between gap-5">
+                <img src={Visa} alt="" />
+                <img src={Bkash} alt="" />
+                <img src={Nagad} alt="" />
+                <img src={Mastercard} alt="" />
+                <img src={Upay} alt="" />
+            </div>
+
+
+        </div>
+        <div class="block p-6    max-w-sm">
+            <h5 class="text-white text-xl text-center leading-tight font-medium mb-4">Download our app</h5>
+            <div className="flex justify-around gap-5">
+                <img src={Google} alt="" />
+                <img src={Appstore} alt="" />
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div className="container  mx-auto flex  justify-evenly ">
+        <div class="block p-6    max-w-sm">
+            <h5 class="text-white text-xl leading-tight font-medium mb-4">Company</h5>
+            <p class="text-white text-base mb-2">
+                About Us
+            </p>
+            <p class="text-white text-base mb-2">
+                Career
+            </p>
+            <p class="text-white text-base mb-2">
+                Community Guidelines
+            </p>
+            <p class="text-white text-base mb-2">
+                Blog
+            </p>
+
+
+        </div>
+        <div class="block p-6    max-w-sm">
+            <h5 class="text-white text-xl leading-tight font-medium mb-4">Other Pages</h5>
+            <p class="text-white text-base mb-2">
+                Site Map
+            </p>
+            <p class="text-white text-base mb-2">
+                Help
+            </p>
+
+
+
+        </div>
+        <div class="block p-6    max-w-sm">
+            <h5 class="text-white text-xl leading-tight font-medium mb-4">Discover</h5>
+            <p class="text-white text-base mb-2">
+                How it Works
+            </p>
+            <p class="text-white text-base mb-2">
+                Earn Money
+            </p>
+            <p class="text-white text-base mb-2">
+                New users FAQ
+            </p>
+
+
+
+        </div>
+        <div class="block p-6    max-w-sm">
+            <h5 class="text-white text-xl leading-tight font-medium mb-4">Contact</h5>
+            <p class="text-white text-base mb-2">
+                16222
+            </p>
+            <p class="text-white text-base mb-2">
+                info@mrxpert.com
+            </p>
+            <p class="text-white text-base mb-2">
+                Corporate Address
+            </p>
+            <p class="text-white text-base mb-2">
+                House # 100, Road # 1, Block - x,
+                Niketon, Dhaka 1212
+            </p>
+
+
+        </div>
+    </div>
+
+
+</div>
+{/*footer end */}
+
+
+
+
+
+<div className="3rd-container w-full bg-green-500 p-6">
+    <div className="container mx-auto flex justify-evenly gap-5">
+        <div className='text-center font-medium'>
+            <h1 className='text-5xl text-white mb-2'>10,000+</h1>
+            <p className='text-white'>Service product</p>
+        </div>
+        <div className='text-center font-medium'>
+            <h1 className='text-5xl  text-white mb-2'>1,00,000+</h1>
+            <p className='text-white'>Order Service </p>
+        </div>
+        <div className='text-center font-medium'>
+            <h1 className='text-5xl  text-white mb-2'>10,000+</h1>
+            <p className='text-white '>5 star Received</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/*container text start */}
+<div className=' text-center  p-40 bg-img'>
+
+
+    <h2 className='text-4xl   font-bold mb-6 '>Book Professional Service for</h2>
+    <h1 className='text-6xl font-bold mb-6 '>Home and Office</h1>
+    <p>
+        Book professional cleaning, appliance repair, home shifting <br />
+        handyman or any kind of maintenance service in Dhaka with
+    </p>
+    <p className='font-medium mb-6'>MR.EX</p>
+    {/*search bar start */}
+    <div class=" text-black rounded-full  bg-white mb-6">
+        <div class="border rounded-full  flex justify-end">
+            <input type="text" class="px-4 py-2 rounded-full w-full outline-none" placeholder="Search..." />
+            <button class="bg-green-400 rounded-r-full flex items-center justify-center px-4 border-l">
+                <svg class="h-5 w-5 text-grey-dark " fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
+                </svg>
+            </button>
+        </div>
+
+    </div>
+    {/*search bar start */}
+    <nav>
+        <ul className='flex flex-wrap justify-center font-medium  gap-5'>
+            <li><a href="#.html">plambing</a></li>
+            <li><a href="#.htm">Ac cleaner</a></li>
+            <li><a href="#.htm">handyman</a></li>
+            <li><a href="#.htm">repair</a></li>
+            <li><a href="#.htm">electricity</a></li>
+        </ul>
+    </nav>
+
+
+
+</div>
+
+{/*container text end */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+
+    <div className="container mx-auto ">
+
+
+
+        {/* card start */}
+        <div className='2nd-container'>
+            {/*<div className='flex  justify-center items-center mt-6 '>
+                <img src={Line} className='h-1 w-10 ' alt="" />
+
+                <h1 className='text-2xl font-medium ml-[-35px]'>How We Work</h1>
+            </div>*/}
+
+
+            <div className="bg-white">
+                <div className="max-w-2xl mx-auto py-16  px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+
+                    <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 md:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+                        {products.map((product) => (
+                        <div key={product.id} className="group relative">
+                            <div>
+                                <img src={product.imageSrc} alt={product.imageAlt} className="h-20 w-20 mx-auto" />
+                            </div>
+                            <div className="mt-4 ">
+                                <div>
+                                    <h3 className="text-center text-lg font-bold mb-2 ">
+                                        {product.title}
+                                    </h3>
+                                    <p className="text-center  text-sm mb-4 text-gray-500">{product.bodytext}</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        ))}
+                    </div>
+                    <button className='w-full md:w-32 p-2 px-4 border rounded border-lime-700 '> Learn more</button>
+                </div>
+            </div>
+
+
+
+
+            <div className="  bg-slate-900 ">
+
+
+                <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+                    {ServiceNumber.map((x) => (
+                    <div key={x.id} className="group relative ">
+
+                        <div className="text-center mt-4 mb-2">
+                            <div className=' font-medium text-white'>
+                                <h1 className="text-5xl  mb-2">
+                                    {x.Number}
+                                </h1>
+                                <p> {x.NUmberText}</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    ))}
+                </div>
+
+
+            </div>
+
+            <div className='text-center mt-6 '>
+                <h1 className='text-2xl font-medium '>-Why Choose Us</h1>
+            </div>
+
+            <div className="bg-white">
+                <div className="max-w-2xl mx-auto py-16  px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+
+                    <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 md:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+                        {Chooseus.map((x) => (
+                        <div key={x.id} className="group relative">
+                            <div>
+                                <img src={x.imageSrc} alt={x.imageAlt} className="h-20 w-20 mx-auto" />
+                            </div>
+                            <div className="mt-4 ">
+                                <div>
+                                    <h3 className="text-center text-lg font-bold mb-2 ">
+                                        {x.title}
+                                    </h3>
+                                    <p className="text-center text-sm mb-4 text-gray-500">{x.bodytext}</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        ))}
+                    </div>
+
+                </div>
+            </div>
+            <div className='text-center mt-6 '>
+                <h1 className='text-2xl '>-How it works</h1>
+            </div>
+            <div className="flex flex-col lg:flex-row justify-around mt-20">
+                <img src={Bgimg} className='' alt="" />
+                <div className='flex flex-col items-center '>
+                    {Howwork.map((x) =>
+                    <div className="flex flex-col lg:flex-row gap-5">
+                        <img src={x.imageSrc} className="h-11 w-[14%] mx-auto mt-4 lg:mt-0" alt="" />
+                        <div className='  mt-2 max-w-sm p-2'>
+                            <h1 className='font-medium text-center lg:text-start mb-2'>{x.title} </h1>
+                            <p className='text-justify'>{x.bodytext}</p>
+                        </div>
+                    </div>
+
+                    )}
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div className='text-center mt-20 '>
+                <h1 className='text-2xl '>-Featired Taskers</h1>
+            </div>
+
+            <div className="bg-white">
+                <div className="max-w-2xl mx-auto py-16  px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+
+                    <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 md:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                        {Tasker.map((x) => (
+                        <div key={x.id} className="group relative">
+
+                            <div className='h-[100px] w-[100px] rounded-full bg-slate-300 mx-auto p-2'>
+                                <img src={x.imageSrc} alt={x.imageAlt} className="h-20 w-20 rounded-full mx-auto" />
+                            </div>
+
+                            <div className="mt-4  flex justify-center  gap-2">
+                                <div>
+                                    <h3 className=" text-xl font-bold   text-gray-700">
+                                        {x.Name}
+                                    </h3>
+                                </div>
+                                <img src={x.Verified} alt={x.imageAlt} className='h-5 w-5' />
+
+                            </div>
+                            <div className="flex justify-center mt-2">
+                                <img src={x.StarImg} alt={x.imageAlt} className='w-auto' />
+                            </div>
+
+
+
+
+
+                            <div className="mt-4 ">
+                                <div>
+
+                                    <p className="text-center font-medium text-base mb-4 text-black">{x.bodytext}</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        ))}
+                    </div>
+
+                </div>
+            </div>
+
+            <div className='text-start mt-14 mb-20'>
+                <h1 className='text-2xl '>-Real Happy Customers, <br /> Real Stories</h1>
+            </div>
+            <div className="flex flex-col lg:flex-row  items-center lg:items-start justify-evenly">
+                <div>
+                    <h4 className='max-w-lg text-justify  mb-10 lg:mb-0'>Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Necessitatibus
+                        perferendis ut accusamus modi obcaecati saepe dolore mollitia nesciunt, numquam aspernatur
+                        quam neque
+                        voluptatem quidem culpa. Voluptatem, maxime facilis. Quod, veritatis. Lorem ipsum dolor, sit
+                        amet
+                        consectetur adipisicing elit. Quasi ullam labore sapiente tempore dolorem perferendis officiis
+                        nulla
+                        repellendus eum deserunt!</h4>
+                </div>
+                <img src={Bgimg} className=' w-auto ' alt="" />
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        {/* card end */}
+        <div className="flex flex-col lg:flex-row lg:justify-evenly mt-20">
+            <img src={Phone} className='h-[600px] mx-auto' alt="" />
+            <div className='mt-24 mx-auto text-center lg:text-start'>
+                <h1 className='text-2xl font-medium mb-6'>Easy Way of Booking Services</h1>
+                <h1 className='text-5xl font-bold max-w-sm mb-6'>
+                    Download Our Mobile App Now!!
+                </h1>
+                <p className='border inline  rounded p-2 '>Download Now</p>
+                <p className='border inline  rounded p-2 ml-4 '>Download Now</p>
+            </div>
+
+
+
+        </div>
+
+
+
+        <div className=" mt-14">
+            <h1 className='text-center text-3xl font-medium mb-6'>Get Support Any Time,From Any Where. We are here for
+                you
+                24/7</h1>
+            <div className='text-center'>
+                <p className='  border inline  rounded p-2 px-6 '>Request for Service</p>
+                <p className=' border inline  rounded p-2 ml-4 px-6'>16222</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+    {/*footer start */}
+    <div className="mt-20 bg-slate-900 ">
+        <div className="flex flex-col lg:flex-row  items-center justify-around bg-slate-800">
+            <div class="block p-6  mt-5 lg:mt-0  max-w-sm">
+                <h5 class="text-white text-xl text-center leading-tight font-medium mb-4">Company logo</h5>
+                <div className="flex justify-between">
+                    <img src={Fb} alt="" />
+                    <img src={Instragram} alt="" />
+                    <img src={Linkend} alt="" />
+                </div>
+
+
+            </div>
+            <div class="block p-6    max-w-sm">
+                <h5 class="text-white text-xl text-center leading-tight font-medium mb-4">Payment methods</h5>
+                <div className="flex justify-between gap-5">
+                    <img src={Visa} alt="" />
+                    <img src={Bkash} alt="" />
+                    <img src={Nagad} alt="" />
+                    <img src={Mastercard} alt="" />
+                    <img src={Upay} alt="" />
+                </div>
+
+
+            </div>
+            <div class="block p-6 mb-5 lg:mb-0   max-w-sm">
+                <h5 class="text-white text-xl text-center leading-tight font-medium mb-4">Download our app</h5>
+                <div className="flex justify-around gap-5">
+                    <img src={Google} alt="" />
+                    <img src={Appstore} alt="" />
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div className="   flex flex-col items-center lg:items-start  lg:flex-row justify-evenly ">
+            <div class="block p-6 text-center lg:text-left   max-w-sm">
+                <h5 class="text-white text-xl leading-tight font-medium mb-4">Company</h5>
+                <p class="text-white text-base mb-2">
+                    About Us
+                </p>
+                <p class="text-white text-base mb-2">
+                    Career
+                </p>
+                <p class="text-white text-base mb-2">
+                    Community Guidelines
+                </p>
+                <p class="text-white text-base mb-2">
+                    Blog
+                </p>
+
+
+            </div>
+            <div class="block p-6  text-center lg:text-left   max-w-sm">
+                <h5 class="text-white text-xl leading-tight font-medium mb-4">Other Pages</h5>
+                <p class="text-white text-base mb-2">
+                    Site Map
+                </p>
+                <p class="text-white text-base mb-2">
+                    Help
+                </p>
+
+
+
+            </div>
+            <div class="block p-6  text-center lg:text-left   max-w-sm">
+                <h5 class="text-white text-xl leading-tight font-medium mb-4">Discover</h5>
+                <p class="text-white text-base mb-2">
+                    How it Works
+                </p>
+                <p class="text-white text-base mb-2">
+                    Earn Money
+                </p>
+                <p class="text-white text-base mb-2">
+                    New users FAQ
+                </p>
+
+
+
+            </div>
+            <div class="block p-6  text-center lg:text-left   max-w-sm">
+                <h5 class="text-white text-xl leading-tight font-medium mb-4">Contact</h5>
+                <p class="text-white text-base mb-2">
+                    16222
+                </p>
+                <p class="text-white text-base mb-2">
+                    info@mrxpert.com
+                </p>
+                <p class="text-white text-base mb-2">
+                    Corporate Address
+                </p>
+                <p class="text-white text-base ">
+                    House # 100, Road # 1, Block - x,
+                    Niketon, Dhaka 1212
+                </p>
+
+
+            </div>
+        </div>
+
+
+    </div>
+    {/*footer end */}
+</div>
