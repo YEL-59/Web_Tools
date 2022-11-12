@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Template</title>
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .container {
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .image-box {
+        background: #fff;
+        width: 60px;
+        border-radius: 40px;
+        padding: 15px;
+        text-align: center;
+        margin-bottom: -40px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+      }
+
+      .title {
+        font-size: 60px;
+        line-height: 20px;
+        color: white;
+        margin-top: 0;
+        padding: 80px 0 20px;
+        font-style: bold;
+        text-shadow: 1px 1px 2px #eb4444;
+        text-align: center;
+      }
+
+      .table-wrapper {
+        background-color: #fff;
+        overflow-x: auto;
+        overflow-x: auto;
+        display: block;
+        max-height: 100vh;
+        max-width: 100%;
+        margin: 30px 15px 0px;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+        border: 2px solid #ffbd59;
+      }
+
+      table {
+        border-collapse: separate;
+        border-spacing: 0px;
+      }
+
+      .table-wrapper thead tr {
+        height: 30px;
+        background: #ffbd59;
+        position: sticky;
+        top: -1px;
+      }
+
+      .table-wrapper tbody tr:nth-child(even) {
+        background-color: #d9d9d9;
+      }
+
+      .table-wrapper tbody tr:nth-child(odd) {
+        background-color: white;
+      }
+
+      table th,
+      table td {
+        padding: 4px;
+      }
+
+      table td,
+      table th {
+        text-align: center;
+        font-size: 15px;
+        border: 1px solid rgb(177, 177, 177);
+      }
+      .social-icon {
+        margin: 0 auto;
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      /* Responsive */
+      @media screen and (max-width: 992px) {
+        .container {
+          width: 90%;
+        }
+      }
+
+      @media screen and (max-width: 720px) {
+        .social-icon {
+          width: 40%;
+        }
+        .title {
+          line-height: 50px;
+        }
+      }
+
+      /* scrolling  */
+      ::-webkit-scrollbar {
+        width: 7px;
+        height: 7px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background-color: #fff;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: #8e8e93;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #089bab;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <!-- Logo -->
+      <div class="image-box">
+        <img
+          src="https://i.ibb.co/R4mVRVL/favicon.png"
+          width="60"
+          alt="therapypms"
+          title="therapypms"
+        />
+      </div>
+      <div
+        style="
+          background: linear-gradient(
+            90deg,
+            #004594 0%,
+            #007eb8 50%,
+            #004594 100%
+          );
+          border-radius: 20px;
+        "
+      >
+        <p class="title">PGR Summary</p>
+
+        <!-- Table start here -->
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th style="min-width: 400px">Facility Name</th>
+                <th>Expected Target</th>
+                <th>Total Acheived</th>
+                <th>Deficit</th>
+                <th style="min-width: 80px">Coll %</th>
+              </tr>
+            </thead>
+            <tbody style="font-size: 1vw; text-align: center">
+              <tr>
+                <td>
+                  Blue Dove Rehibilitation Center Blue Dove Rehibilitation
+                  Center Blue Dove Rehibilitation Center
+                </td>
+                <td>$769,459.00</td>
+                <td>$769,459.00</td>
+                <td>$769,459.00</td>
+                <td>Coll %</td>
+              </tr>
+              <tr>
+                <td>
+                  Blue Dove Rehibilitation Center Blue Dove Rehibilitation
+                  Center Blue Dove Rehibilitation Center
+                </td>
+                <td>$769,459.00</td>
+                <td>$769,459.00</td>
+                <td>$769,459.00</td>
+                <td>Coll %</td>
+              </tr>
+              <tr>
+                <td>
+                  Blue Dove Rehibilitation Center Blue Dove Rehibilitation
+                  Center Blue Dove Rehibilitation Center
+                </td>
+                <td>$769,459.00</td>
+                <td>$769,459.00</td>
+                <td>$769,459.00</td>
+                <td>Coll %</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- TPMS Image -->
+        <div style="margin: 0px 15px; background-color: #fff">
+          <img
+            src="https://i.ibb.co/zHrF1qB/logo.png"
+            style="
+              display: block;
+              padding: 40px 0px;
+              margin-left: auto;
+              margin-right: auto;
+            "
+            alt="TherapyPMS"
+          />
+        </div>
+
+        <!-- Help and Contact -->
+        <div
+          style="margin: 0px 15px; padding: 15px 0px; background-color: #fff"
+        >
+          <div style="margin: auto; width: 60%; text-align: center">
+            <a
+              href="https://therapypms.com/contact/"
+              style="color: #0070ba; text-decoration: none"
+              alt="Help &amp; Contact"
+              target="_blank"
+              >Help &amp; Contact
+            </a>
+            <span> | </span>
+            <a
+              href="https://therapypms.com/"
+              style="color: #0070ba; text-decoration: none"
+              alt="Security"
+              target="_blank"
+              >Security
+            </a>
+            <span> | </span>
+            <a
+              href="https://login.therapypms.com/"
+              style="color: #0070ba; text-decoration: none"
+              alt="Apps"
+              target="_blank"
+              >Apps
+            </a>
+          </div>
+        </div>
+        <!-- Social Icon -->
+        <div
+          style="margin: 0px 15px; padding-bottom: 20px; background-color: #fff"
+        >
+          <div class="social-icon">
+            <a
+              id="m_5047260769756893116m_-5827074152985393175m_-2416218507927562861twitter"
+              href="https://twitter.com/amromedbilling"
+              target="_blank"
+              ><img
+                src="https://ci5.googleusercontent.com/proxy/4qfFVV1RPmVqq9XSghFmkTaxEUROtzRDwmYm-BWwTt32PSeLOOvFPMq-SKSBY35Ko5oMEi_J27TK0PRvScPL7O4ck-56k86hTqK70qJbRaLxmfNeKIxzt88Pf7tjWDszJDXifg9Xi68_vkK1SwZuPfWNqlIGnU37XHZQ3Cw=s0-d-e1-ft#https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/dark-mode/icon-tw.png"
+                width="28"
+                height="28"
+                style="display: block"
+                alt="Twitter"
+                class="CToWUd"
+              />
+            </a>
+            <a
+              id="m_5047260769756893116m_-5827074152985393175m_-2416218507927562861instagram"
+              href="https://www.instagram.com/amromedbilling/"
+              target="_blank"
+              ><img
+                src="https://ci4.googleusercontent.com/proxy/bmJBXMhbrdGTcSBjeP9MgRW42x9qzdkPY7qF2No7LtRRPoRt_cSgJ_iTXfzckIXZj2GaEnF8rYxJV4mQkK1zV-3_U0MoYHEqk_ptz4BJhNVS1RVMfC_vQ-d7ezpt_uOxTXh-peBilOv1fjMkdFTy_fpLfs-O0Hi911jFRbw=s0-d-e1-ft#https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/dark-mode/icon-ig.png"
+                width="28"
+                height="28"
+                style="display: block"
+                alt="Instagram"
+                class="CToWUd"
+            /></a>
+            <a
+              id="m_5047260769756893116m_-5827074152985393175m_-2416218507927562861facebook"
+              href="https://www.facebook.com/amromedbilling"
+              target="_blank"
+              ><img
+                src="https://ci4.googleusercontent.com/proxy/MFNzrqYz4U0XhJvc3ZlTlukIMeQcmxhLkm72sww2oDSD0HMaWQDCaRAiOaSKQpjvPw2ugiZs7RYecQoV5PHQgw6Wyf4LgsarvzMMYUD4T3P-qmd4PFApYNZFZngCarUgD5EuGFwgiOBqm7xMbQWRCtXBefiMaaZ1VHLN1gI=s0-d-e1-ft#https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/dark-mode/icon-fb.png"
+                width="28"
+                height="28"
+                style="display: block"
+                alt="Facebook"
+                class="CToWUd"
+              />
+            </a>
+            <a
+              id="m_5047260769756893116m_-5827074152985393175m_-2416218507927562861linkedin"
+              href="https://www.linkedin.com/company/amromedllc/"
+              target="_blank"
+              ><img
+                src="https://ci6.googleusercontent.com/proxy/aqZyYIHlLYUtGyUHNy-d-RSwU1GTg1J8SLj-FrzG-948ki1N08WlFyo_W7BUed-JVMt7EzByN13vrEqORA4IeKEjiJaHpAOL2Ps_vsVxCgfD9xLcKtqxSPMEC8xr5k5isTS0fKM_-WT4q8ugnNDi2cmd8H3tgPC6HyBuDBs=s0-d-e1-ft#https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/dark-mode/icon-li.png"
+                width="28"
+                height="28"
+                style="display: block"
+                alt="LinkedIn"
+                class="CToWUd"
+              />
+            </a>
+          </div>
+        </div>
+        <div style="padding-bottom: 80px"></div>
+      </div>
+    </div>
+  </body>
+</html>
