@@ -1,0 +1,8 @@
+.Btn{
+    background-color: cadetblue;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 7px;
+}
