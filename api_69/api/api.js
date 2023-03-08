@@ -20,7 +20,7 @@ const DisplayData = phones => {
                   class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
                   <a href="#!" data-te-ripple-init data-te-ripple-color="light">
                     <img
-                      class="rounded-t-lg w-full h-64  "
+                      class="rounded-t-lg   "
                       src="${phone.image}"
                       alt="" />
                   </a>
