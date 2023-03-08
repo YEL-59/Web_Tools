@@ -12,6 +12,14 @@ const DisplayData = phones => {
   Divcontainer.textContent = "";
   //display fixed data from api
   phones=phones.slice(0,3)
+  //if api has no data then show a message
+  const nophone = document.getElementById("no-data-found");
+  if(phones.length==0){
+    nophone.classList.remove("invisible");
+
+  }else{
+    nophone.classList.add("invisible");
+  }
   phones.forEach(phone => {
     const createDiv = document.createElement("div");
     createDiv.classList.add("col");
