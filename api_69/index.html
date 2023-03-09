@@ -53,7 +53,30 @@
       <h1 >No data Found sorry!!!</h1>
     
     </div>
+    <div class="invisible" id="show-all">
+      <button
+        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+        id="load-more"
+        "
+      >
+        Load More
+      </button>
 
+    </div>
+    <!--Spiner-->
+    <div class="invisible" id="loader">
+      <div class="flex items-center justify-center " >
+        <div
+          class=" inline-block  h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+          role="status">
+          <span
+            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+            >Loading...</span
+          >
+        </div>
+      </div>
+    </div>
+    
 <!--tailWind css-->
 <script src="https://cdn.tailwindcss.com/3.2.4"></script>
 <script>
