@@ -11,7 +11,13 @@ const DisplayData = phones => {
   const Divcontainer = document.getElementById("containers");
   Divcontainer.textContent = "";
   //display fixed data from api
-  phones=phones.slice(0,3)
+  //phones=phones.slice(0,20)
+  const showAll=document.getElementById("show-all");
+ if(phones.length>10){
+    showAll.classList.remove("invisible");
+  }else{
+    showAll.classList.add("invisible");
+  }
   //if api has no data then show a message
   const nophone = document.getElementById("no-data-found");
   if(phones.length==0){
@@ -28,7 +34,7 @@ const DisplayData = phones => {
                   class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
                   <a href="#!" data-te-ripple-init data-te-ripple-color="light">
                     <img
-                      class="rounded-t-lg   "
+                      class="rounded-t-lg mx-auto "
                       src="${phone.image}"
                       alt="" />
                   </a>
@@ -52,11 +58,21 @@ const DisplayData = phones => {
     `
     Divcontainer.appendChild(createDiv)
   });
+  toggleSpinner(false);
 };
 document.getElementById("button-addon3").addEventListener("click", function () {
+  toggleSpinner(true);
     const searchField = document.getElementById("search");
     const searchText = searchField.value;
     //console.log(searchText)
     LoadData(searchText);
 });
-LoadData();
+const toggleSpinner = isloading => {
+  const loaderSection = document.getElementById("loader");
+  if (isloading) {
+    loaderSection.classList.remove("invisible");
+  } else {
+    loaderSection.classList.add("invisible");
+  }
+}
+//LoadData();
