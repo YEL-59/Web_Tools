@@ -1,4 +1,4 @@
-//console.log(1234)
+//console.log(1234..)
 function LoadData(Search) {
   const url = ` https://openapi.programming-hero.com/api/phones?search=${Search}`;
   fetch(url)
