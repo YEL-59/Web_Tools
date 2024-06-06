@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 4 Stepper Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .stepper {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .stepper .step {
+            width: 100%;
+            text-align: center;
+            position: relative;
+        }
+        .stepper .step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 100%;
+            height: 2px;
+            background-color: #ddd;
+            z-index: -1;
+        }
+        .stepper .step.active .step-indicator {
+            background-color: #007bff;
+        }
+        .step-indicator {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #ddd;
+            display: inline-block;
+            line-height: 30px;
+            color: white;
+        }
+        .form-step {
+            display: none;
+        }
+        .form-step.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-3">
+            <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action" onclick="showStep(1)">Step 1</button>
+                <button type="button" class="list-group-item list-group-item-action" onclick="showStep(2)">Step 2</button>
+                <button type="button" class="list-group-item list-group-item-action" onclick="showStep(3)">Step 3</button>
+                <button type="button" class="list-group-item list-group-item-action" onclick="showStep(4)">Step 4</button>
+                <button type="button" class="list-group-item list-group-item-action" onclick="showStep(5)">Step 5</button>
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="stepper">
+                <div class="step active">
+                    <span class="step-indicator">1</span>
+                </div>
+                <div class="step">
+                    <span class="step-indicator">2</span>
+                </div>
+                <div class="step">
+                    <span class="step-indicator">3</span>
+                </div>
+                <div class="step">
+                    <span class="step-indicator">4</span>
+                </div>
+                <div class="step">
+                    <span class="step-indicator">5</span>
+                </div>
+            </div>
+            <form id="stepper-form">
+                <div class="form-step active">
+                    <h4>Step 1</h4>
+                    <p>Content for step 1</p>
+                </div>
+                <div class="form-step">
+                    <h4>Step 2</h4>
+                    <p>Content for step 2</p>
+                </div>
+                <div class="form-step">
+                    <h4>Step 3</h4>
+                    <p>Content for step 3</p>
+                </div>
+                <div class="form-step">
+                    <h4>Step 4</h4>
+                    <p>Content for step 4</p>
+                </div>
+                <div class="form-step">
+                    <h4>Step 5</h4>
+                    <p>Content for step 5</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-secondary" id="prevBtn" onclick="changeStep(-1)">Previous</button>
+                    <button type="button" class="btn btn-primary" id="nextBtn" onclick="changeStep(1)">Next</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    let currentStep = 1;
+    showStep(currentStep);
+
+    function showStep(step) {
+        const steps = document.querySelectorAll('.form-step');
+        const stepIndicators = document.querySelectorAll('.stepper .step');
+        steps.forEach((el, index) => {
+            el.classList.remove('active');
+            stepIndicators[index].classList.remove('active');
+            if (index === step - 1) {
+                el.classList.add('active');
+                stepIndicators[index].classList.add('active');
+            }
+        });
+    }
+
+    function changeStep(stepChange) {
+        currentStep += stepChange;
+        if (currentStep < 1) currentStep = 1;
+        if (currentStep > 5) currentStep = 5;
+        showStep(currentStep);
+    }
+</script>
+</body>
+</html>
